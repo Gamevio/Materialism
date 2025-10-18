@@ -5,5 +5,61 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Materialism.MainWindow"
         Title="Materialism">
-    Welcome to Avalonia!
+    <DockPanel>
+        <!-- Top Menu Bar -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Save" Click="Save_Click"/>
+                <MenuItem Header="_Load" Click="Load_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Maps">
+                <!-- Maps submenu -->
+            </MenuItem>
+        </Menu>
+
+        <!-- Main Resizable Area -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/> <!-- Left panel -->
+                <ColumnDefinition Width="5"/>  <!-- GridSplitter -->
+                <ColumnDefinition Width="1*"/> <!-- Right panel -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Split into Viewport (top) and File Explorer (bottom) -->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/> <!-- Viewport -->
+                    <RowDefinition Height="5"/>  <!-- Horizontal splitter -->
+                    <RowDefinition Height="1*"/> <!-- File Explorer -->
+                </Grid.RowDefinitions>
+
+                <!-- Top: Viewport -->
+                <Border Grid.Row="0" Background="Gray">
+                    <!-- Your viewport here -->
+                </Border>
+
+                <!-- Horizontal Grid Splitter -->
+                <GridSplitter Grid.Row="1" Height="5" Background="LightGray"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              ShowsPreview="True"/>
+
+                <!-- Bottom: File Explorer -->
+                <Border Grid.Row="2" Background="DarkGray">
+                    <!-- Your file explorer content -->
+                </Border>
+            </Grid>
+
+            <!-- Vertical Grid Splitter -->
+            <GridSplitter Grid.Column="1" Width="5" Background="LightGray"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          ShowsPreview="True"/>
+
+            <!-- Right: Layer Panel -->
+            <Border Grid.Column="2" Background="LightSlateGray">
+                <!-- Layer panel content -->
+            </Border>
+        </Grid>
+    </DockPanel>
 </Window>

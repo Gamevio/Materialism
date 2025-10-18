@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Materialism")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1199425373b2e699156a151a277d2f5be0195b03")]
 [assembly: System.Reflection.AssemblyProductAttribute("Materialism")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Materialism")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -73,3 +73,4 @@
 /home/iosif/Documents/Materialism/obj/Debug/net8.0/Materialism.genruntimeconfig.cache
 /home/iosif/Documents/Materialism/obj/Debug/net8.0/ref/Materialism.dll
 /home/iosif/Documents/Materialism/bin/Debug/net8.0/SixLabors.ImageSharp.dll
+/home/iosif/Documents/Materialism/obj/Debug/net8.0/Materialism.sourcelink.json
